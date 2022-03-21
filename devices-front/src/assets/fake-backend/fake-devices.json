@@ -1,0 +1,35 @@
+
+[
+    {
+        "id": "8b218c2b-4052-4acb-a8e7-0e3505297f1e",
+        "name": "Device 1",
+        "type": "IPhoneMobile",
+        "status": "Available",
+        "relatedDevices": [
+                 "193b0a5f-7e80-41d9-9d06-ba8b18e9c936",
+                 "49da1c3d-3993-41db-927a-8a0983af1513",
+                 "99da1c3d-3993-66db-927a-8a0983af1588"
+        ]
+    },
+    {
+        "id": "193b0a5f-7e80-41d9-9d06-ba8b18e9c936",
+        "name": "Device 2",
+        "type": "IPhoneTablet",
+        "status": "Offline",
+        "relatedDevices": []
+    },
+    {
+        "id": "49da1c3d-3993-41db-927a-8a0983af1513",
+        "name": "Device 3",
+        "type": "Desktop",
+        "status": "Available",
+        "relatedDevices": []
+    },
+    {
+        "id": "99da1c3d-3993-66db-927a-8a0983af1588",
+        "name": "Device 4",
+        "type": "Unknown",
+        "status": "Available",
+        "relatedDevices": []
+    }
+]

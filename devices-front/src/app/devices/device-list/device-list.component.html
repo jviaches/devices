@@ -1,0 +1,35 @@
+<mat-card class="marging-10">
+  <div class="search-form">
+    <span mat-card-avatar class="material-icons vertical-center">search</span>
+    <form class="search-full-width">
+      <mat-form-field class="search-full-width">
+        <input matInput type="text" placeholder="Search" [formControl]="myControl" [matAutocomplete]="auto"/>
+        <mat-autocomplete #auto="matAutocomplete">
+          <mat-option *ngFor="let device of filteredDevices | async" [value]="device.name">
+            {{device.name}}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+    </form>
+    <a mat-button (click)="clearSearch()">Cancel</a>
+  </div>
+</mat-card>
+
+<mat-card class="marging-10" *ngFor="let device of (filteredDevices | async); trackBy: trackItem">
+  <mat-card-header>
+    <container-element [ngSwitch]="device.type" class="full-width-inline">
+      <div class="device-details">
+        <span *ngSwitchCase="'IPhoneMobile'" mat-card-avatar class="material-icons vertical-center">smartphone</span>
+        <span *ngSwitchCase="'IPhoneTablet'" mat-card-avatar class="material-icons vertical-center">tablet_mac</span>
+        <span *ngSwitchCase="'Desktop'" mat-card-avatar class="material-icons vertical-center">desktop_windows</span>
+        <span *ngSwitchCase="'Unknown'" mat-card-avatar class="material-icons vertical-center">device_unknown</span>
+        <div class="device-text-details">
+          <mat-card-title (click)="redirectToDeailsPage(device)">{{device.name}}</mat-card-title>
+          <mat-card-subtitle>Status: {{device.status}}</mat-card-subtitle>
+        </div>
+      </div>
+      
+      <span class="material-icons vertical-center">info</span>
+    </container-element>
+  </mat-card-header>
+</mat-card>

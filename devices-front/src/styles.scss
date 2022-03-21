@@ -1,0 +1,73 @@
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+:root {
+    --bg:#EDF2F9;
+    --blue: dodgerblue;
+  }
+
+  *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+  
+  body {
+    margin: 0 2%;
+    background-color: var(--bg);
+  }
+
+  .marging-10 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .mat-card-title {
+    cursor: pointer;
+  }
+
+  .mat-grid-tile-content {
+    display: block !important; // Needed to override angular material design [for details page]
+    }
+
+  .vertical-center {
+    display: flex;
+    align-items: center;
+  }
+
+  .search-full-width {
+    width: 100%;
+    margin-right: 10px;
+  }
+    
+  .full-width-inline {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .header-center {
+    display: flex;
+    align-items: center;
+  }
+
+  .search-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .mat-button {
+    color:var(--blue);
+  }
+
+  .device-details {
+    display: flex; 
+  }
+  
+  .device-text-details {
+    display: flex; 
+    flex-direction: column;
+  }

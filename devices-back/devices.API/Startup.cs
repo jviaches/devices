@@ -55,9 +55,8 @@ namespace devices.API
                 c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
                 {
                     Version = "v1.0.0",
-                    Title = "readcommend",
-                    Description = "Readcommend is a book recommendation web app for the true book aficionados and disavowed human-size bookworms. " +
-                                  "It allows to search for book recommendations with best ratings, based on different search criteria.",
+                    Title = "Devices",
+                    Description = "Api for retrival simple devices",
                 });
             });
         }

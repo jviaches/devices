@@ -1,5 +1,5 @@
 # Description
-This project created as a result to showcase my development skills for technical recruiters.
+This project created as a result to showcase my development skills for technical recruiters. It was accomplished in a week jungling between  main career, family and social life.
 
 # Project concept
 There is basic fullstack implemntation of stored devices in the system. User can see all devices on homepage (http://localhost:4200/) and click on device to get basic details including related devices if any. Search input if filterable.
